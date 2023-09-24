@@ -743,15 +743,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('× ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('× 𝗔𝗗𝗗 𝗠𝗘 𝗧𝗢 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣 ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('ᴏᴡɴ ɪɴғᴏ', url='https://t.me/TGxMATRIX')
+            InlineKeyboardButton('🔍 𝗦𝗘𝗔𝗥𝗖𝗛 𝗛𝗘𝗥𝗘 𝗠𝗢𝗩𝗜𝗘𝗦 🔎', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help2'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('𝗗𝗘𝗩 𝗜𝗡𝗙𝗢 ℹ️', url='https://t.me/LiZarD_amc'), 
+            InlineKeyboardButton(' ♻ 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 ♻', url=' https://t.me/series_planet_luffy_updates') 
             ],[
-            InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/+ax8qz38HZhU1NGE1')
+            InlineKeyboardButton('⚙️ 𝗠𝗬 𝗙𝗨𝗡𝗖𝗧𝗜𝗢𝗡𝗦 ⚙️', callback_data='help2'),
+            InlineKeyboardButton('𝗔𝗕𝗢𝗨𝗧 𝗠𝗘 🤠', callback_data='about')
+            ],[
+            InlineKeyboardButton('🎬 𝗠𝗢𝗩𝗜𝗘 𝗚𝗥𝗢𝗨𝗣 🍿', url='https://t.me/planet_movies_grp')
          ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -838,11 +840,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('𝚄𝙿𝙳𝙰𝚃𝙴𝚂', callback_data='updates'),
-            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/matrixbotz0/PETER-PARKER-BOT'),
+            InlineKeyboardButton('♻ 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 ♻', callback_data='updates'),
+            InlineKeyboardButton('𝗥𝗘𝗣𝗢 🤗', url='https://t.me/series_planet_luffy_updates'),
         ],[
-            InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('𝗛𝗢𝗠𝗘 🏠', callback_data='start'),
+            InlineKeyboardButton('🔒 𝗖𝗟𝗢𝗦𝗘 🔒', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -857,10 +859,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "updates":
         buttons = [[
-            InlineKeyboardButton('𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url='https://t.me/MLZ_BOTZ_SUPPORT'),
-            InlineKeyboardButton('𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/MLZ_BOTZ')
+            InlineKeyboardButton('𝗦𝗨𝗣𝗣𝗢𝗥𝗧 🥰', url='https://t.me/planet_movies_grp'),
+            InlineKeyboardButton('♻ 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 ♻', url='https://t.me/series_planet_luffy_updates')
             ],[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='about')
+            InlineKeyboardButton('𝗔𝗕𝗢𝗨𝗧 𝗠𝗘 🤠', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -870,8 +872,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "manuelfilter":
         buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help2'),
-            InlineKeyboardButton('ʙᴜᴛᴛᴏɴs', callback_data='button')
+            InlineKeyboardButton('🔄 𝗕𝗔𝗖𝗞 🔄', callback_data='help2'),
+            InlineKeyboardButton('⏹ 𝗕𝗨𝗧𝗧𝗢𝗡𝗦 ⏹', callback_data='button')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -891,7 +893,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "button":
         buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='manuelfilter')
+            InlineKeyboardButton('🔄 𝗕𝗔𝗖𝗞 🔄', callback_data='manuelfilter')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -932,7 +934,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "coct":
         buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help2')
+            InlineKeyboardButton('🔄 𝗕𝗔𝗖𝗞 🔄', callback_data='help2')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -942,8 +944,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "extra":
         buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help2'),
-            InlineKeyboardButton('ᴀᴅᴍɪɴ', callback_data='admin')
+            InlineKeyboardButton('🔄 𝗕𝗔𝗖𝗞 🔄', callback_data='help2'),
+            InlineKeyboardButton('👨‍🎓 𝗔𝗗𝗠𝗜𝗡 👨‍🎓', callback_data='admin')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -953,7 +955,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "admin":
         buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='extra')
+            InlineKeyboardButton('🔄 𝗕𝗔𝗖𝗞 🔄', callback_data='extra')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -963,7 +965,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "song":
         buttons = [[
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('🔄 𝗕𝗔𝗖𝗞 🔄', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1048,10 +1050,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "deploy":
         buttons = [[
-           InlineKeyboardButton('ʀᴇᴘᴏ', url='https://github.com/matrixbotz0/PETER-PARKER-BOT'),
-           InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/TGxMATRIX')
+           InlineKeyboardButton('𝗥𝗘𝗣𝗢 🤗', url='https://t.me/series_planet_luffy_updates'),
+           InlineKeyboardButton('👨‍🎓 𝗢𝗪𝗡𝗘𝗥 👨‍🎓', url='https://t.me/LiZarD_amc')
         ], [
-            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('🔄 𝗕𝗔𝗖𝗞 🔄', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
