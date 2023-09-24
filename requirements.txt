@@ -28,11 +28,11 @@ pyshorteners
 countryinfo
 datetime
 pytz
-
 python-math
 psutil==5.9.4
 Pillow
 speedtest-cli
 python-dotenv
 dnspython==2.3.0
+
 
