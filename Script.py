@@ -10,7 +10,7 @@ class script(object):
 
     ABOUT_TXT = """<b>✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
 ✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/LiZarD_amc>ʟɪᴢᴀʀᴅ</a>
-✯ 𝚄𝙿𝙳𝙰𝚃𝙴𝚂: <a href=https://t.me/series_planet_luffy_updates>ʟᴜғғʏ ᴜᴘᴅᴀᴛᴇs</a>
+✯ 𝚄𝙿𝙳𝙰𝚃𝙴𝚂: <a href=https://t.me/series_planet_luffy_updates>ɴᴀᴍɪ ᴜᴘᴅᴀᴛᴇs</a>
 ✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
 ✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
 ✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
@@ -171,7 +171,7 @@ To Get Sticker ID
 <b>COMMAND</b> : /font your text (optional)
         <b> Eg:- /font Hello</b>
 
- <i>This feature added by @MLZ_BOTZ"""
+ <i>This feature added by @planet_movies_grp"""
     JSON_TXT = """<b>JSON:</b>
 Bot returns json for all replied messages with /json or /js
 <b>Features:</b>
@@ -294,7 +294,7 @@ Name - {}
 
     CUSTOM_FILE_CAPTION = """<b>FILE : <code>{file_name}</code>
     
-    @MLZ_BOTZ</b>"""
+    @planet_movies_grp</b>"""
 
     RESTART_TXT = """
 <b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
