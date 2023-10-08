@@ -33,6 +33,6 @@ psutil==5.9.4
 Pillow
 speedtest-cli
 python-dotenv
-dnspython==2.4.0
+dnspython==2.3.0
 SynoHTTPTranscore==3.7.0
 
